@@ -36,11 +36,9 @@ export default {
         // param: month의 데이터
         // a: 변경 후 데이터, b: 변경 전 데이터
         month(a, b) {
-            console.log('a > ', a);
-            console.log('b > ', b);
             // month 라는 데이터가 변할 때마다 여기 있는 코드가 실행됨
             // 사용자가 글자 입력 시 경고문을 띄움
-            if (a == '') {
+            if (a == b) {
                 return;
             }
             
@@ -49,7 +47,6 @@ export default {
                 // month 초기화
                 this.month = 1;
             }
-
         }
     },
 

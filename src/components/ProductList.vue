@@ -18,9 +18,15 @@ export default {
     },
     methods : {
         send() {
-            this.$emit('openModal', this.원룸.id)
-        }
+            console.log('ProductList :::: send ')
+            this.$emit('openModal', this.원룸.id) // Home 으로 전
+            console.log('ProductList :::: this >> ', this)
+        },
+    },
+    mounted() {
+        this.$emit('emitTest2');
     }
+
 
 }
 </script>

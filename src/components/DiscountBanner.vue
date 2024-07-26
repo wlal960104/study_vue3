@@ -14,7 +14,7 @@ export default {
     name : 'DiscountBanner', // 두 글자 이상으로 해야 오류가 나지 않음
     data() {
       return {
-        percentage : 3,
+        percentage : 20,
       }
     },
 
